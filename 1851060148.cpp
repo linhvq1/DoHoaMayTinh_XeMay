@@ -60,7 +60,7 @@ void updateScene()
     rotation = atan2(speed * sin_steering, BIKE_LENGTH + speed * cos_steering);
     direction = degrees(angleSum(radians(direction), rotation));
     //
-    spin = spin + 1.0 + pow(2,speed); 
+    spin = spin + 1.0 + speed *10*2; 
     if (spin > 360.0)
         spin = spin - 360.0;
 }
