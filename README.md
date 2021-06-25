@@ -12,13 +12,40 @@ Và chúng tôi đã làm được!!
 ```
 ## Cách cài đặt
 1. sau khi đã clone git về, hãy mở phần properties của vs studio lên và bắt đầu config.
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/2file_impotant.png">
+</p>
  - thêm phần tùy chọn thư viện bằng cách dẫn nguồn vào folder "include"
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/i_config.png">
+</p>
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/i_config2.png">
+</p>
  - tương tự như thế với phần Link
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/l_config.png">
+</p>
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/l_config2.png">
+</p>
+  + thêm 4 dòng này vào input trong Link : freeglut.lib glew32.lib glfw3.lib OpenGL32.lib
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/l_config3.png">
+</p>
 2. và thế là chạy được rồi. Easy mà :)))
 
 ## Demo
 > Một app vô cùng dễ dùng. Vừa vào app bạn có thể thấy hướng dẫn cực kì chi tiết.
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/tutorial1.png">
+</p>
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/tutorial2.png">
+</p>
+
 > video demo
+https://user-images.githubusercontent.com/75062585/123451638-e3ce5f00-d607-11eb-8aef-a74e59bce2bd.mp4
 
 #### THANKS
 >▶thanks for watching my repos! if your like it, give me a star🌟 and follow me🧡🧡!!!
