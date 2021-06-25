@@ -1,0 +1,264 @@
+﻿  1851060148.cpp
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(27,23): warning C4244: 'return': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(32,19): warning C4244: 'return': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(38,25): warning C4244: 'return': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(39,35): warning C4244: 'return': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(63,23): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(65,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(76,44): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(170,36): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(174,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(175,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(259,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(285,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(334,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(335,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(336,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(337,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(350,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(362,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(387,41): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(388,41): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(389,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(390,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(391,40): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(392,40): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(409,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(411,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(429,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(431,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(432,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(440,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(442,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(445,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(447,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(448,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(451,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(452,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(453,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(454,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(457,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(458,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(459,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(464,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(465,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(466,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(470,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(471,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(479,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(480,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(481,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(482,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(485,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(486,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(487,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(488,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(491,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(492,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(493,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(494,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(497,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(498,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(499,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(500,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(503,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(504,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(505,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(506,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(509,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(510,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(511,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(512,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(519,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(520,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(521,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(522,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(525,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(526,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(527,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(528,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(531,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(532,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(533,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(534,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(537,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(538,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(539,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(540,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(543,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(544,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(545,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(546,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(549,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(550,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(551,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(552,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(583,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(610,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(612,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(619,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(627,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(635,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(738,42): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(738,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(739,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(739,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(740,45): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(740,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(740,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(741,46): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(741,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(741,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(744,43): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(744,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(745,42): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(745,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(746,46): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(746,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(746,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(747,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(747,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(747,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(750,43): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(750,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(751,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(751,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(751,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(752,46): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(752,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(752,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(753,42): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(753,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(756,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(756,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(757,42): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(757,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(758,46): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(758,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(758,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(759,45): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(759,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(759,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(762,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(762,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(763,42): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(763,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(764,43): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(764,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(765,42): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(765,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(768,45): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(768,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(768,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(769,46): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(769,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(769,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(770,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(770,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(770,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(771,46): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(771,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(771,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(817,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(841,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(842,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(843,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(844,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(847,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(848,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(849,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(850,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(853,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(854,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(855,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(856,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(859,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(860,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(861,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(862,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(865,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(866,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(867,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(868,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(871,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(872,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(873,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(874,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(908,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(909,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(944,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1144,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1152,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1209,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1210,27): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1214,45): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1220,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1221,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1224,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1229,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1230,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1236,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1238,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1242,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1244,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1245,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1249,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1251,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1252,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1257,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1258,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1265,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1266,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1272,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1273,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1274,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1288,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1289,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1296,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1298,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1305,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1306,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1307,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1308,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1312,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1313,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1314,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1315,34): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1320,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1321,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1326,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1327,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1334,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1335,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1341,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1342,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1343,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1349,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1350,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1351,34): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1358,42): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1373,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1376,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1388,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1401,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1413,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1420,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1430,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1515,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1578,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1581,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1582,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1602,41): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1656,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1665,32): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1879,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1881,63): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1882,64): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1886,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1888,63): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1889,64): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1896,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1898,63): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(1899,64): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\source\repos\1851060148\1851060148.cpp(2003,61): warning C4305: 'argument': truncation from 'double' to 'float'
+  1851060148.vcxproj -> C:\Users\ASUS\source\repos\1851060148\x64\Debug\1851060148.exe
