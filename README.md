@@ -1,5 +1,12 @@
 # DoHoaMayTinh_XeMay
 Bài tập lớn đồ họa máy tính: Mô phỏng xe máy 3D
+> Images
+<p float="left" align="center">
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/xe1.png?raw=true" width="300" />
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/xe2.png?raw=true" width="300" /> 
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/xe3.png?raw=true" width="300" />
+</p>
+
 ## Ý Tưởng
 ```
   Vào một ngày đẹp trời của kì 2 năm 3 đại học, chúng tôi nhận được thông báo chọn đề tài bài tập lớn môn đồ họa máy tính. 
