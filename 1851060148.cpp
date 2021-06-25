@@ -1906,16 +1906,6 @@ void mouseMotionFunc(int x, int y) {
 /* các thao tác xử lý chuột */
 void mouse(int button, int state, int x, int y)
 {
-    switch (button)
-    {
-    case GLUT_MIDDLE_BUTTON:
-        if (state == GLUT_DOWN)
-            glutIdleFunc(NULL);
-        break;
-    default:
-        break;
-    }
-
     // get the mouse buttons
     if (button == GLUT_LEFT_BUTTON)
         if (state == GLUT_DOWN) {
