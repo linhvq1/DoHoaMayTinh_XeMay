@@ -1,4 +1,4 @@
-﻿#include <windows.h>  // for MS Windows
+#include <windows.h>  // for MS Windows
 #include <GL/glut.h>  // GLUT, include glu.h and gl.h
 #include <GL/gl.h>
 #include <GL/glu.h>
@@ -76,12 +76,14 @@ GLfloat qaGrey[] = { 0.5,0.5,0.5,0.5 };
 GLfloat qaLowAmbient[] = { 0.2,0.2,0.2,1.0 };
 GLfloat qaFullAmbient[] = { 1.0,1.0,1.0,1.0 };
 // texture
-unsigned int texName;
-unsigned int texName1;
+//unsigned int texName;
+unsigned int matVanTocTex;
+unsigned int denXeTex;
+unsigned int logoTex;
 GLint grass;
 int Flag1 = 0;
 unsigned int ID;
-void LoadTexture(const char* filename) {
+void LoadTexture(const char* filename, unsigned int &texName) {
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
     glGenTextures(1, &texName);
     glBindTexture(GL_TEXTURE_2D, texName);
@@ -149,21 +151,13 @@ int shiftActive = 0, altActive = 0, ctrlActive = 0;
 
 //
 void init(void) {
-    //glClearColor(0.2, 0.2, 0.2, 1.0);
-    glShadeModel(GL_FLAT);
-    glEnable(GL_DEPTH_TEST);
 
-    //GLfloat qaAmbientLight[] = { 0.2,0.2,0.2,1.0 };
-    //GLfloat qaDiffuseLight[] = { 0.8,0.8,0.8,1.0 };
-    //GLfloat qaSpeculartLight[] = { 1.0,1.0,1.0,1.0 };
-
-    //glLightfv(GL_LIGHT0, GL_AMBIENT, qaAmbientLight);
-    //glLightfv(GL_LIGHT0, GL_DIFFUSE, qaDiffuseLight);
-    //glLightfv(GL_LIGHT0, GL_SPECULAR, qaSpeculartLight);
-
-    //// diem chieu sang
-    //GLfloat qaLightPos[] = { 4.0, 4.0, 10.0, 0.0 };
-    //glLightfv(GL_LIGHT0, GL_POSITION, qaLightPos);
+    //glEnable(GL_DEPTH_TEST);
+    grass = loadimage("grass_1.bmp");
+    LoadTexture("denxe.bmp",denXeTex);
+    LoadTexture("matDoVantoc24.bmp",matVanTocTex);
+    LoadTexture("logo.bmp",logoTex);
+   
 }
 void lighting() // FUNCTION FOR LIGHTING
 {
@@ -191,6 +185,7 @@ void lighting() // FUNCTION FOR LIGHTING
     }
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
+    glEnable(GL_DEPTH_TEST);
 }
 void maugoc() {
     glMaterialfv(GL_FRONT, GL_AMBIENT, qaGreen);
@@ -324,9 +319,9 @@ void denxe(int rev) {
 }
 void denXePlus() {
     glEnable(GL_TEXTURE_2D);
-
-    LoadTexture("denxe.bmp");
-    glBindTexture(GL_TEXTURE_2D, texName);
+    //
+    //LoadTexture("denxe.bmp");
+    glBindTexture(GL_TEXTURE_2D, denXeTex);
     glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
     //glColor3f(1,1,0);
     glBegin(GL_QUADS);
@@ -377,11 +372,11 @@ void dauxe() {
     glVertex3f(0, 2, 2);
     glVertex3f(0, 0, 2);
     glEnd();
-
+    //
     glEnable(GL_TEXTURE_2D);
     glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
-    LoadTexture("matDoVantoc24.bmp");
-    glBindTexture(GL_TEXTURE_2D, texName);
+    //LoadTexture("matDoVantoc24.bmp");
+    glBindTexture(GL_TEXTURE_2D, matVanTocTex);
     glBegin(GL_POLYGON);
     glNormal3f(0.0, -1.0, 0.0);
     glTexCoord2f(0.00 + 0.01, 0.0 + 0.18);glVertex3f(0, 2, -2);
@@ -407,7 +402,6 @@ void dauxe() {
     denxe(1);
     glRotatef(10, 0.0, 0.0, 1.0);
     glTranslatef(0, -1.15, 0);
-    glRotatef(180,1.0,0,0);
     glTranslatef(0,1.15,0);
     glRotatef(-10, 0.0, 0.0, 1.0);
     denXePlus();
@@ -1376,11 +1370,12 @@ void fixBinhXang(float loi, int rev) {
     glVertex3f(-0.85, -0.25, loi);
     glVertex3f(0.25, 0.25, loi);
     glEnd();
+    //
     glPushMatrix();
     glEnable(GL_TEXTURE_2D);
     glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
-    LoadTexture("logo.bmp");
-    glBindTexture(GL_TEXTURE_2D, texName);
+    //LoadTexture("logo.bmp");
+    glBindTexture(GL_TEXTURE_2D, logoTex);
     glTranslatef(1.5, -1, 3);
     glRotatef(180,0,0,1.0);
     glTranslatef(-1.5,1,-3);
@@ -1725,12 +1720,12 @@ void fullThanXe() {
     toMau(qaGrey, qaGrey, qaWhite, 128.0, qaLowAmbient);
     duoiXe(1);
     glPopMatrix();
-    maugoc();
+    //maugoc();
 }
 // add
 void draw_ground()
 {
-    grass = loadimage("grass_1.bmp");
+    
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, grass);
     glBegin(GL_QUADS);
@@ -1780,13 +1775,13 @@ void rendenScene2() {
     char speedString[100], speedString1[100], speedString2[100];
     
     sprintf(speedString, "speed: %f", speed);
-    writeText(22, 8, 1, speedString);
+    writeText(20, 8, 1, speedString);
    
     sprintf(speedString1, "steering: %f", steering);
-    writeText(22, 7, 1, speedString1);
+    writeText(20, 7, 1, speedString1);
 
     sprintf(speedString2, "direction: %f", direction);
-    writeText(22, 6, 1, speedString2);
+    writeText(20, 6, 1, speedString2);
     
     lighting();
     //shading();
@@ -1832,9 +1827,12 @@ void rendenScene2() {
     fulldauxe();
     glPopMatrix();
     //
+    //glPushMatrix();
     glTranslatef(xpos, 0.0f, zpos);// <-------
     glRotatef(direction, 0.0f, 1.0f, 0.0f);// <-------
     fullThanXe();
+    glPopMatrix();
+    glPopMatrix();
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(camx, camy, camz, camx, 1.0, 0.0, 0.0, 1.0, 1.0);
@@ -1906,6 +1904,8 @@ void mouseMotionFunc(int x, int y) {
 /* các thao tác xử lý chuột */
 void mouse(int button, int state, int x, int y)
 {
+   
+
     // get the mouse buttons
     if (button == GLUT_LEFT_BUTTON)
         if (state == GLUT_DOWN) {
@@ -1933,24 +1933,6 @@ void mouse(int button, int state, int x, int y)
     mousePressedY = y;
     // }
 
-
-    // get the modifiers
-    switch (glutGetModifiers()) {
-    case GLUT_ACTIVE_SHIFT:
-        shiftActive = 1;
-        break;
-    case GLUT_ACTIVE_ALT:
-        altActive = 1;
-        break;
-    case GLUT_ACTIVE_CTRL:
-        ctrlActive = 1;
-        break;
-    default:
-        shiftActive = 0;
-        altActive = 0;
-        ctrlActive = 0;
-        break;
-    }
 }
 
 void idleFunc(void) {
@@ -2003,19 +1985,20 @@ void operations_window() // OPERATION WINDOW FOR DESCRIPTION OF OPERATIONS TO PE
     glClearColor(0, 0, 0, 0);
     glColor3f(0.0, 1.0, 1.0);
     //bitmap_output(-1.25, 1.7, 0.50, "lol");
-    bitmap_output(-5.5, 6, 0.50, "CAC CHUC NANG DUNG DE DIEU KHIEN XE");
-    bitmap_output(-5.5, 4, 0.50, "1. RESET THE CAMERA - USE 'R' OR 'r'");
-    bitmap_output(-5.5, 3, 0.50, "2. TANG TOC DO CUA XE 'W' USE 'w'");
-    bitmap_output(-5.5, 2, 0.50, "3. GIAM TOC DO CUA XE 'S' USE 's'");
-    bitmap_output(-5.5, 1, 0.50, "4. RE PHAI 'D' USE 'd'");
-    bitmap_output(-5.5, 0, 0.50, "5. RE TRAI 'A' USE 'a'");
-    bitmap_output(-5.5, -1, 0.50, "6. ZOOM VAO - USE 'UPWARD ARROW'");
-    bitmap_output(-5.5, -2, 0.50, "7. ZOOM RA - USE 'DOWNWARD ARROW'");
-    bitmap_output(-5.5, -3, 0.50, "8. CHUYEN CAM SANG TRAI - DUNG 'LEFT ARROW'");
-    bitmap_output(-5.5, -4, 0.50, "9. CHUYEN CAM SANG PHAI - DUNG 'RIGHT ARROW'");
-    bitmap_output(-5.5, -5, 0.50, "10. SU DUNG CHUOT TRAI DE THAY DOI TOA DO CUA KHUNG NHIN");
-    bitmap_output(-5.5, -6, 0.50, "10. SU DUNG CHUOT PHAI DE ZOOM RA/VAO KHUNG NHIN");
-    bitmap_output(-5.5, -7, 0.50, "PLEASE PRESS C TO CONTINUE");
+    bitmap_output(-7.5, 6, 0.50, "CAC CHUC NANG DUNG DE DIEU KHIEN XE");
+    bitmap_output(-7.5, 4, 0.50, "1. RESET THE CAMERA - USE 'R' OR 'r'");
+    bitmap_output(-7.5, 3, 0.50, "2. TANG TOC DO CUA XE 'W' USE 'w'");
+    bitmap_output(-7.5, 2, 0.50, "3. GIAM TOC DO CUA XE 'S' USE 's'");
+    bitmap_output(-7.5, 1, 0.50, "4. RE PHAI 'D' USE 'd'");
+    bitmap_output(-7.5, 0, 0.50, "5. RE TRAI 'A' USE 'a'");
+    bitmap_output(-7.5, -1, 0.50, "6. ZOOM VAO - USE 'UPWARD ARROW'");
+    bitmap_output(-7.5, -2, 0.50, "7. ZOOM RA - USE 'DOWNWARD ARROW'");
+    bitmap_output(-7.5, -3, 0.50, "8. CHUYEN CAM SANG TRAI - DUNG 'LEFT ARROW'");
+    bitmap_output(-7.5, -4, 0.50, "9. CHUYEN CAM SANG PHAI - DUNG 'RIGHT ARROW'");
+    bitmap_output(-7.5, -5, 0.50, "10. SU DUNG CHUOT TRAI DE THAY DOI TOA DO CUA KHUNG NHIN");
+    bitmap_output(-7.5, -6, 0.50, "10. SU DUNG CHUOT PHAI DE ZOOM RA/VAO KHUNG NHIN");
+    bitmap_output(-7.5, -7, 0.50, "PLEASE PRESS C TO CONTINUE");
+    
     glutSwapBuffers();
     glFlush();
 }
@@ -2083,7 +2066,7 @@ void key(unsigned char key, int x, int y) {
         glutDisplayFunc(rendenScene2);
         break;
     }
-    
+    //glutPostRedisplay();
 }
 void passive(int x, int y) // PASSIVE FUNCTION WHEN NO MOUSE KEYS ARE PRESSED
 {
@@ -2092,7 +2075,7 @@ void passive(int x, int y) // PASSIVE FUNCTION WHEN NO MOUSE KEYS ARE PRESSED
 int main(int argc, char* argv[]) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(800, 800);
+    glutInitWindowSize(1366, 768);
     glutInitWindowPosition(100, 100);
     glutCreateWindow("Opengl Study");
     init();
