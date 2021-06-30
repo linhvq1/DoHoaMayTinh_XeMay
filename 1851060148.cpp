@@ -11,7 +11,7 @@
 #include<iostream>
 using namespace std;
 
-//
+// Biến di chuyển
 static GLfloat testxoayxe = 0.0;
 #define PI 3.14159
 #define BIKE_LENGTH 3.3f  //<------
@@ -20,8 +20,8 @@ static GLfloat testxoayxe = 0.0;
 #define INC_SPEED 0.05f
 GLfloat xpos, zpos, direction;
 static GLfloat spin = 0.0;
-
 GLfloat speed, steering;
+// các hàm chuyển đổi độ
 GLfloat degrees(GLfloat a)
 {
     return a * 180.0f / PI;
@@ -39,6 +39,7 @@ GLfloat angleSum(GLfloat a, GLfloat b)
     else if (a > 2 * PI) return a - 2 * PI;
     else return a;
 }
+// cập nhật giá trị  khi xe di chuyển
 void updateScene()
 {
     GLfloat xDelta, zDelta;
@@ -59,8 +60,8 @@ void updateScene()
 
     rotation = atan2(speed * sin_steering, BIKE_LENGTH + speed * cos_steering);
     direction = degrees(angleSum(radians(direction), rotation));
-    //
-    spin = spin + 1.0 + speed *10*2; 
+    // cập nhât giá trị quay của bánh xe
+    spin = spin + 1.0 + speed *10*2;
     if (spin > 360.0)
         spin = spin - 360.0;
 }
@@ -81,8 +82,10 @@ unsigned int matVanTocTex;
 unsigned int denXeTex;
 unsigned int logoTex;
 GLint grass;
-int Flag1 = 0;
-unsigned int ID;
+// giá trị báo để tắt nền và trục tọa độ
+int Flag1 = 0, Flag2 = 0;
+unsigned int ID; // ko dùng
+// hàm loadtexture sử dụng thư viện stbi
 void LoadTexture(const char* filename, unsigned int &texName) {
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
     glGenTextures(1, &texName);
@@ -100,6 +103,7 @@ void LoadTexture(const char* filename, unsigned int &texName) {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
     stbi_image_free(image);
 }
+// hàm loadtexture thủ công
 GLuint loadimage(const char* fileName)
 {
     FILE* file;
@@ -133,7 +137,6 @@ GLuint loadimage(const char* fileName)
 // test cam
 GLfloat camx = 10.0, camy= 0.0, camz=15.0;
 
-//int x,y,z;
 // camera attributes
 float viewerPosition[3] = { 0.0, 0.0, -20.0 };
 float viewerDirection[3] = { 0.0, 0.0, 0.0 };
@@ -146,28 +149,28 @@ float lastXOffset = 0.0, lastYOffset = 0.0, lastZOffset = 0.0;
 // mouse button states
 int leftMouseButtonActive = 0, middleMouseButtonActive = 0, rightMouseButtonActive = 0;
 // modifier state
-int shiftActive = 0, altActive = 0, ctrlActive = 0;
 
 
 //
+void reset(void);
+// hàm init các giá trị texture côt để tối ưu hiệu năng
 void init(void) {
-
-    //glEnable(GL_DEPTH_TEST);
+    reset();
     grass = loadimage("grass_1.bmp");
     LoadTexture("denxe.bmp",denXeTex);
     LoadTexture("matDoVantoc24.bmp",matVanTocTex);
     LoadTexture("logo.bmp",logoTex);
-   
 }
+// hàm thiết lập độ sáng và màu của nguồn sáng (light0)
 void lighting() // FUNCTION FOR LIGHTING
 {
     glClearColor(0.2, 0.2, 0.2, 1.0);
     // printf("%s\n", "YESS ");
     GLfloat light_directional[] = { 1.0,1.0,1.0,1.0 };
-    GLfloat light_positional[] = { 1.0,1.0,1.0,1.0 };
+    GLfloat light_positional[] = { 1.0,5.0,1.0,1.0 };
     GLfloat light_diffuse[] = { 0.8,0.8,0.8,1.0 };
     GLfloat light_ambient[] = { 0.2,0.2,0.2,1.0 };
-
+    
     if (light_value == 0) {
         glLightModelfv(GL_LIGHT_MODEL_AMBIENT, light_ambient);
         glLightfv(GL_LIGHT0, GL_POSITION, light_positional);
@@ -187,6 +190,7 @@ void lighting() // FUNCTION FOR LIGHTING
     glEnable(GL_LIGHT0);
     glEnable(GL_DEPTH_TEST);
 }
+// đưa giá trị màu về mặc định cho việc tô màu xe dễ hơn
 void maugoc() {
     glMaterialfv(GL_FRONT, GL_AMBIENT, qaGreen);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, qaGreen);
@@ -195,7 +199,7 @@ void maugoc() {
     glMaterialfv(GL_LIGHT0, GL_AMBIENT, qaLowAmbient);
 }
 
-// to mau
+// hàm tô màu cho chất liệu của vật thể
 void toMau(GLfloat ambient[], GLfloat diffuse[], GLfloat specular[], GLfloat shininess, GLfloat lowAmbient[]) {
     glMaterialfv(GL_FRONT, GL_AMBIENT, ambient);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, diffuse);
@@ -203,7 +207,7 @@ void toMau(GLfloat ambient[], GLfloat diffuse[], GLfloat specular[], GLfloat shi
     glMaterialf(GL_FRONT, GL_SHININESS, shininess);
     glMaterialfv(GL_LIGHT0, GL_AMBIENT, lowAmbient);
 }
-
+// hàm vẽ trục tọa độ
 void DrawCoordinate()
 {
     glDisable(GL_LIGHTING);
@@ -242,6 +246,7 @@ void DrawCircle(float cx, float cy, float r, int num_segments, float cphx, float
     glEnd();
 }
 // denxe
+// rev là gía trị đệ quy báo hiệu lấy đối xứng qua trục x
 void denxe(int rev) {
     glBegin(GL_QUADS);
     glNormal3f(1.0, 0, 0);
@@ -317,6 +322,7 @@ void denxe(int rev) {
         denxe(0);
     }
 }
+// dán texture vào mặt đèn xe
 void denXePlus() {
     glEnable(GL_TEXTURE_2D);
     //
@@ -372,7 +378,7 @@ void dauxe() {
     glVertex3f(0, 2, 2);
     glVertex3f(0, 0, 2);
     glEnd();
-    //
+    // dán texture cho mặt đo vận tốc
     glEnable(GL_TEXTURE_2D);
     glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
     //LoadTexture("matDoVantoc24.bmp");
@@ -406,7 +412,6 @@ void dauxe() {
     glRotatef(-10, 0.0, 0.0, 1.0);
     denXePlus();
     glPopMatrix();
-    
 }
 
 
@@ -828,6 +833,7 @@ void updateKhopNoiBanhSau(int rev) {
         updateKhopNoiBanhSau(0);
     }
 }
+// hàm vẽ phần nối giữa thân xe và bánh sau
 void khopNoiBanhsau() {
 
     glBegin(GL_QUADS);
@@ -1722,24 +1728,56 @@ void fullThanXe() {
     glPopMatrix();
     //maugoc();
 }
-// add
+// hàm vẽ mặt cỏ
 void draw_ground()
-{
-    
+{ 
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, grass);
     glBegin(GL_QUADS);
-    glTexCoord2f(0.0f, 0.0f); glVertex3f(-150.0f, -1.5f, 150.0f);;
-    glTexCoord2f(100.0f, 0.0f); glVertex3f(-150.0f, -1.5f, -150.0f);;
-    glTexCoord2f(100.0f, 100.0f); glVertex3f(150.0f, -1.5f, -150.0f);
-    glTexCoord2f(0.0f, 100.0f); glVertex3f(150.0f, -1.5f, 150.0f);
+    // mapping ảnh lên không gian 2 chiều
+    glTexCoord2f(0.0f, 0.0f); glVertex3f(-180.0f, -1.5f, 180.0f);
+    glTexCoord2f(100.0f, 0.0f); glVertex3f(-180.0f, -1.5f, -180.0f);
+    glTexCoord2f(100.0f, 100.0f); glVertex3f(180.0f, -1.5f, -180.0f);
+    glTexCoord2f(0.0f, 100.0f); glVertex3f(180.0f, -1.5f, 180.0f);
     glEnd();
     glDisable(GL_TEXTURE_2D);
     glLineWidth(5.0);
     glTranslatef(0.0, -2, 0.0);
     glTranslatef(0.0, 2, 0.0);
 }
-// viet chu len man hinh
+//void draw_background() {
+//    
+//    glEnable(GL_TEXTURE_2D);
+//    glBindTexture(GL_TEXTURE_2D, canhvatTex);
+//    glBegin(GL_QUADS);
+//    glTexCoord2f(0.0f, 0.0f); glVertex3f(-180.0f, -1.5f, -180.0f);;
+//    glTexCoord2f(1.0f, 0.0f); glVertex3f(180.0f, -1.5f, -180.0f);;
+//    glTexCoord2f(1.0f, 1.0f); glVertex3f(180.0f, 170.0f, -180.0f);
+//    glTexCoord2f(0.0f, 1.0f); glVertex3f(-180.0f, 170.0f, -180.0f);
+//    glEnd();
+//
+//    glBindTexture(GL_TEXTURE_2D, canhvatTex2);
+//    glBegin(GL_QUADS);
+//    glTexCoord2f(0.0f, 0.0f); glVertex3f(-180.0f, -1.5f, 180.0f);;
+//    glTexCoord2f(1.0f, 0.0f); glVertex3f(-180.0f, -1.5f, -180.0f);;
+//    glTexCoord2f(1.0f, 1.0f); glVertex3f(-180.0f, 170.0f, -180.0f);
+//    glTexCoord2f(0.0f, 1.0f); glVertex3f(-180.0f, 170.0f, 180.0f);
+//    glEnd();
+//
+//    glBindTexture(GL_TEXTURE_2D, canhvatTex3);
+//    glBegin(GL_QUADS);
+//    glTexCoord2f(0.0f, 0.0f); glVertex3f(180.0f, -1.5f, -180.0f);;
+//    glTexCoord2f(1.0f, 0.0f); glVertex3f(180.0f, -1.5f, 180.0f);;
+//    glTexCoord2f(1.0f, 1.0f); glVertex3f(180.0f, 170.0f, 180.0f);
+//    glTexCoord2f(0.0f, 1.0f); glVertex3f(180.0f, 170.0f, -180.0f);
+//    glEnd();
+//    glDisable(GL_TEXTURE_2D);
+//    glLineWidth(5.0);
+//    //glTranslatef(0.0, -2, 0.0);
+//    //glTranslatef(0.0, 2, 0.0);
+//}
+
+// viet chu len man hinh ở trong rendersence2
 void writeText(float x, float y, float z, char* string)
 {
 
@@ -1756,7 +1794,7 @@ void writeText(float x, float y, float z, char* string)
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_LIGHTING);
 }
-// cung la ham viet chu nhung cho man hinh bat dau
+// cung la ham viet chu nhung cho man hinh bat dau và màn hinh operation
 void bitmap_output(float x, float y, float z, const char* string1)
 {
     int len, i;
@@ -1767,6 +1805,7 @@ void bitmap_output(float x, float y, float z, const char* string1)
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, string1[i]);
     }
 }
+// hàm hiển thị xe máy
 void rendenScene2() {
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -1782,15 +1821,6 @@ void rendenScene2() {
 
     sprintf(speedString2, "direction: %f", direction);
     writeText(20, 6, 1, speedString2);
-    
-    lighting();
-    //shading();
-    // camera hover
-    glTranslatef(viewerPosition[0], viewerPosition[1], viewerPosition[2]);
-    glRotatef(navigationRotation[0], 1.0f, 0.0f, 0.0f);
-    glRotatef(navigationRotation[1], 0.0f, 1.0f, 0.0f);
-
-   
     for (int i = 0; i < 2;i++) {
         if (i == 0) {
             glShadeModel(GL_FLAT);
@@ -1799,22 +1829,38 @@ void rendenScene2() {
             glShadeModel(GL_SMOOTH);
         }
     }
+    lighting();
+    //shading();
+    // camera hover
+    glTranslatef(viewerPosition[0], viewerPosition[1], viewerPosition[2]);
+    glRotatef(navigationRotation[0], 1.0f, 0.0f, 0.0f);
+    glRotatef(navigationRotation[1], 0.0f, 1.0f, 0.0f);
+
+   
+    
     if (Flag1 == 0) {
         glPushMatrix();
         glColor3f(1, 1, 0);
         glTranslatef(0, -10.5, -5);
         draw_ground();
         glPopMatrix();
-        DrawCoordinate();
+        /*glPushMatrix();
+        glTranslatef(0, -10.5, -5);
+        draw_background();
+        glPopMatrix();*/
+        if (Flag2 == 0) {
+            DrawCoordinate();
+        }
     }
 
     //set ambient diffuse specular
-    glMaterialfv(GL_FRONT, GL_AMBIENT, qaGreen);
+    /*glMaterialfv(GL_FRONT, GL_AMBIENT, qaGreen);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, qaGreen);
     glMaterialfv(GL_FRONT, GL_SPECULAR, qaWhite);
     glMaterialf(GL_FRONT, GL_SHININESS, 128.0);
-    glMaterialfv(GL_LIGHT0, GL_AMBIENT, qaLowAmbient);
+    glMaterialfv(GL_LIGHT0, GL_AMBIENT, qaLowAmbient);*/
 
+    //if (zpos == 2) reset();
 
     glPushMatrix();
     glTranslatef(xpos, 0.0f, zpos);// <-------
@@ -1828,11 +1874,12 @@ void rendenScene2() {
     glPopMatrix();
     //
     //glPushMatrix();
+    
     glTranslatef(xpos, 0.0f, zpos);// <-------
     glRotatef(direction, 0.0f, 1.0f, 0.0f);// <-------
     fullThanXe();
     glPopMatrix();
-    glPopMatrix();
+    
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(camx, camy, camz, camx, 1.0, 0.0, 0.0, 1.0, 1.0);
@@ -1841,9 +1888,10 @@ void rendenScene2() {
     
 }
 
-
+// hàm hoạt động khi kích thước màn hình thay đổi
 void reShape(int w, int h)
 {
+
     glViewport(0, 0, (GLsizei)w, (GLsizei)h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -1934,12 +1982,12 @@ void mouse(int button, int state, int x, int y)
     // }
 
 }
-
+// hàm hoạt động khi không có hoạt động nào xảy ra
 void idleFunc(void) {
     updateScene();
     glutPostRedisplay();
 }
-
+// hàm sử dụng các phím mũi tên để di chuyển cam
 void special(int key, int x, int y) // FUNCTION FOR CAM ZOOMING
 {
     switch (key)
@@ -1959,6 +2007,7 @@ void special(int key, int x, int y) // FUNCTION FOR CAM ZOOMING
     }
     glutPostRedisplay();
 }
+// hàm reset xe về điểm ban đầu
 void reset() {
     speed = steering = 0.0f;
     camx = 10.0, camy = 0.0, camz = 15.0;
@@ -1980,7 +2029,7 @@ void welcome_window() // WELCOME WINDOW
 }
 // man hinh gioi thieu cac mode su dung
 void operations_window() // OPERATION WINDOW FOR DESCRIPTION OF OPERATIONS TO PERFORM
-{
+{   //glDisable(GL_LIGHTING);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glClearColor(0, 0, 0, 0);
     glColor3f(0.0, 1.0, 1.0);
@@ -1998,9 +2047,11 @@ void operations_window() // OPERATION WINDOW FOR DESCRIPTION OF OPERATIONS TO PE
     bitmap_output(-7.5, -5, 0.50, "10. SU DUNG CHUOT TRAI DE THAY DOI TOA DO CUA KHUNG NHIN");
     bitmap_output(-7.5, -6, 0.50, "10. SU DUNG CHUOT PHAI DE ZOOM RA/VAO KHUNG NHIN");
     bitmap_output(-7.5, -7, 0.50, "PLEASE PRESS C TO CONTINUE");
+    //glEnable(GL_LIGHTING);
     
     glutSwapBuffers();
     glFlush();
+    
 }
 // key event
 void key(unsigned char key, int x, int y) {
@@ -2012,6 +2063,11 @@ void key(unsigned char key, int x, int y) {
     case 'g':
         if (Flag1 == 0) Flag1 = 1;
         else Flag1 = 0;
+        break;
+    case 'V':
+    case 'v':
+        if (Flag2 == 0) Flag2 = 1;
+        else Flag2 = 0;
         break;
     case 'R':
     case 'r':
