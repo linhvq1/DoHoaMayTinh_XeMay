@@ -54,5 +54,29 @@ Và chúng tôi đã làm được!!
 > video demo
 https://user-images.githubusercontent.com/75062585/123451638-e3ce5f00-d607-11eb-8aef-a74e59bce2bd.mp4
 
+## Update
+1. Shadow and reflection, add a robot
+<p float="left" align="center">
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/update1.png?raw=true" width="350" />
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/update2.png?raw=true" width="350" /> 
+</p>
+
+2. Showroom with clarity glass
+ <p float="left" align="center">
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/update3.png?raw=true" width="400" />
+  <img src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/update4.png?raw=true" width="400" /> 
+</p>
+
+3. Sound
+> Giờ bạn đã có thể nghe được âm thanh xe chạy rồi đấy!🤙✌✌
+
+> Hãy mở phần comment dưới đây ra và nhấn các phím tương ứng để phát âm thanh nhé!😙
+
+> bạn có thể tắt âm thanh ở phím 'x'😘😘
+
+<p align="center">
+<img align="center" src="https://github.com/linh16p/DoHoaMayTinh_XeMay/blob/main/image_demo/update5.png?raw=true">
+</p>
+
 #### THANKS
 >▶thanks for watching my repos! if your like it, give me a star🌟 and follow me🧡🧡!!!
