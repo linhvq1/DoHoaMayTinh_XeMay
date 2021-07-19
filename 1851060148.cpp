@@ -415,6 +415,8 @@ void DrawFlection() {
     //Make pixels in the stencil buffer be set to 1 when the stencil test passes
     glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
     //Set all of the pixels covered by the floor to be 1 in the stencil buffer
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_FRONT);
     draw_ground(san);
     glColorMask(1, 1, 1, 1); //Enable drawing colors to the screen
     glEnable(GL_DEPTH_TEST); //Enable depth testing
@@ -434,6 +436,7 @@ void DrawFlection() {
     glColor4f(1, 1, 1, 0.7f);
     draw_ground(san);
     glDisable(GL_BLEND);
+    glDisable(GL_CULL_FACE);
     // test
 }
 // hàm hiển thị xe máy
